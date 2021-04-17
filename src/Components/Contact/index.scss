@@ -1,0 +1,65 @@
+@import "../index.scss";
+%smooth-bg {
+    background: darken($mainColor, 4%);
+    border-radius: 5px;
+}
+.contact{
+    color: $defaultText;
+    .about-header{
+        span{
+            @extend %smooth-bg;
+            padding: 4px 12px;
+        }
+    }
+    form{
+        max-width: 700px;
+        margin: 0 auto;
+        label{
+            margin-top:15px;
+            font-size: 20px;
+        }
+        input, textarea{
+            border: 2px solid darken($secondryColor, 20%);
+            border-radius: 8px;
+            outline: 0;
+            padding: 0 10px;
+            &:focus{
+                border: 2px solid lighten($buttonShadow, 5%);
+            }
+        }
+        input{
+            height: 45px;
+            font-size: 20px;
+        }
+        textarea{
+            resize: none;
+        }
+        input[type="submit"]{
+            border:none;
+            border-radius: 0;
+            display: block;
+            margin: 20px auto;
+            @include gradientBtn;
+            width: 200px;
+            color: $defaultText;
+            &:hover{
+                @include gradient ($buttonShadow,$secondryColor);
+                box-shadow: 0px 0px 15px 0px lighten($secondryColor, 20%);
+            }
+        }
+    }
+    .social{
+        margin: 30px 0;
+        text-align: center;
+        a{
+            @extend %smooth-bg;
+            padding: 5px 10px;
+            margin: 0 10px;
+            color: $defaultText;
+            text-decoration: none;
+            .icon{
+                margin-right: 5px;
+            }
+        }
+    }
+}

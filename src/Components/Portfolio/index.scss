@@ -1,0 +1,56 @@
+@import "../index.scss";
+
+.portfolio{
+    color: $defaultText;
+    p{
+        margin-bottom: 30px;
+    }
+    .projects-list{
+        width:100%;
+        .project-item{
+            display: inline-block;
+            width:90%;
+            box-shadow: 3px 3px 10px 1px darken($mainColor, 10%);
+            margin: 20px 2%;
+            transition: box-shadow .5s;
+            position: relative;
+            &:hover{
+                box-shadow: 3px 3px 10px 1px darken($mainColor, 15%);
+                .overlay-pro{
+                    bottom: 0;
+                    visibility: visible;                    
+                }
+            }
+            @media (min-width: 600px){
+                width:46%;
+            }
+            @media (min-width: 990px){
+                width:29%;
+            }
+            li{
+                img{
+                    width:100%;
+                    filter: grayscale(60%);
+                    opacity: .5;
+                }
+            }
+            .overlay-pro{
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 100%;
+                // display: block;
+                background: rgba(darken($mainColor, 3%), .9);
+                cursor: pointer;
+                visibility: hidden;
+                transition: bottom .5s, top .5s, visibility .5s;
+                overflow: hidden;
+                .icon{
+                    @extend %hero-image;
+                    color: darken($defaultText, 15%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import "../index.scss";
+.about{
+    color: $defaultText;
+    .about-image{
+        display: none;
+        @media (min-width: 768px) {
+            display:block;
+            text-align: center;
+        }
+        img{
+            width:330px;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "mytools": [
+        {
+            "id": 1,
+            "image": "./images/html.png"
+        },
+        {
+            "id": 2,
+            "image": "./images/css.png"
+        },
+        {
+            "id": 3,
+            "image": "./images/js.png"
+        },
+        {
+            "id": 4,
+            "image": "./images/jquery.png"
+        },
+        {
+            "id": 5,
+            "image": "./images/bootstrap.png"
+        },
+        {
+            "id": 6,
+            "image": "./images/react.png"
+        },
+        {
+            "id": 7,
+            "image": "./images/redux.png"
+        },
+        {
+            "id": 8,
+            "image": "./images/sass.png"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "image": "./images/projects/project1.png"
+        },
+        {
+            "id": 2,
+            "image": "./images/projects/project1.png"
+        },
+        {
+            "id": 3,
+            "image": "./images/projects/project1.png"
+        },
+        {
+            "id": 4,
+            "image": "./images/projects/project1.png"
+        },
+        {
+            "id": 5,
+            "image": "./images/projects/project1.png"
+        },
+        {
+            "id": 6,
+            "image": "./images/projects/project1.png"
+        }
+    ]
+}

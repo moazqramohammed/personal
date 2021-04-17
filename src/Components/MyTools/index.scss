@@ -1,0 +1,52 @@
+@import "../index.scss";
+.mytools{
+    // border-top: 1px solid $defaultText;
+    color: $defaultText;
+    span{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0 10px;
+        margin: 15px 0;
+        font-size: 20px;
+        font-weight: bold;
+        &::after{
+            content: "";
+            display: block;
+            position:absolute;
+            height: 1px;
+            right:0;
+            left: 200px;
+            background: rgb(226, 243, 245);
+            // opacity: .1;
+        }
+        }
+    .mytools-list{
+        ul{
+            display: grid;
+            justify-content: center;
+            position: relative;
+            grid-template-columns: repeat(4,25%);
+            @media (min-width: 768px){
+                grid-template-columns: repeat(8, 12.5%);
+            }
+            &::after{
+                content:"";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-color: rgba($mainColor, .2);
+            }
+            li{
+                display: inline-block;
+                opacity: .5;
+                margin: 10px 15px;
+                img{
+                    filter: grayscale(100%);
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
